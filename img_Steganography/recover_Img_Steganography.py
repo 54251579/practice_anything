@@ -24,11 +24,11 @@ def recover_msg(file):
                                 r,g,b = (0,0,0)
                                 
                             img_save.putpixel((x,y), (r,g,b))
-                    img_save.save(path+color_str[color]+str(idx)+".png", 'png')
+                    img_save.save(path+'recover/'+color_str[color]+str(idx)+".png", 'png')
     except KeyboardInterrupt:
         img_save.save(path+color_str[color]+str(idx)+".png", 'png')
 
 path = #path
-file = path+'test.png'
+file = path+'after.png'
 recover_msg(file)
 print('end')

@@ -26,9 +26,10 @@ def make_msg(file):
                 b = b&(~bits[select_bit])
             img_save.putpixel((x,y), (r,g,b))
 
-    img_save.save(path+color_str[select_color-1]+str(select_bit)+".png", 'png')
+    # img_save.save(path+color_str[select_color-1]+str(select_bit)+".png", 'png')
+    img_save.save(path+'after.png', 'png')
 
-path = # path
+path = #path
 file = path+'Sample.png'
 make_msg(file)
 print('end')
